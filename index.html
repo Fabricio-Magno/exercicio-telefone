@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+    <form autocomplete="off">
+        <header>
+            <img src="./imagens/agenda.png" alt="Agenda de Contatos">
+            <h1>Agenda de Contatos</h1>
+        </header>
+    </form>
+        <div class="imputbox">
+            <label for="nome" >Nome Completo</label>
+            <input type="text" name="nome" id="inputNome" required="required">
+        </div>
+         <div class="imputbox">
+            <label for="telefone">Telefone</label>
+            <input type="number" name="telefone" id="inputTelefone" required="required">
+        </div>
+        <div class="imputbox">
+            <button id="btnCadastrar">Adicionar Contato</button>
+        </div>
+        <table>
+            <thead>
+                <tr id="tr">
+                    <th id="td">Nome</th>
+                    <th id="td">Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaContatosBody">
+                <!-- Contatos serão adicionados aqui -->
+            </tbody>
+            </table>
+        </div>
+            <script src="./main.js"></script>
+</body>
+</html>
